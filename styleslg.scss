@@ -1,0 +1,272 @@
+@import 'variables.scss';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: $primaryfont;   
+  background-color: $mainblue; 
+  box-sizing: border-box;  
+    h2 {
+      color: $orange;
+      text-align: center;
+      font-size: 42px;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 2px $navblue;
+    }
+    main {
+      margin-left: 80px;
+    }
+}
+
+.navBars {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 25vh;
+  padding-bottom: 20px;
+  background-color: $navblue;
+  margin: 0px;
+  .navIcons {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 80px;
+    justify-content: space-around;
+    align-items: center;
+    span {
+      display: none;
+    }
+    ul {
+      margin-top: 30%;
+    }
+    
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 80px;
+    justify-content: flex-end;
+    align-items: center;
+    span {
+      display: none;
+    }
+  }
+  ul {
+    list-style-type: none;
+  }
+  i {
+    font-size: 35px;
+    color: $iconblue;
+    text-shadow: 0px 0px 5px 5px $iconblue;
+  }
+  ul.contact, ul.navIcons, i.fas, a, li {
+    background-color: $navblue;
+  }
+
+  ul li a:hover {
+    text-shadow: 0 0 10px $iconblue; 
+}
+}
+
+.greetingMain {
+  padding-top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  height: 100vh;
+  width: 70%;
+  line-height: 60px;
+    .greetingBox {
+      padding-bottom: 300px;
+    }
+    .greeting1 {
+      color: ivory;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-shadow: 1px 1px 2px $navblue; 
+    }
+    .greeting2 {
+      color:$orange;
+      font-size: 4rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-shadow: 1px 1px 2px $navblue;
+    }
+    .greeting3 {
+      color: ivory;
+      font-size: 2rem;
+      letter-spacing: 3px;
+      text-shadow: 1px 1px 2px $navblue;
+    }
+    .greeting4 a {
+      font-size: 20px;
+      color: $iconblue;      
+      border-radius: 5px;
+      margin-top: 20%;
+      padding: 0px 5px 0px 5px;
+      box-shadow: 0px 0px 5px 5px $iconblue;
+      transition: ease-in-out 0.4s;
+      }
+      .greeting4-text:hover {
+        box-shadow: 0px 0px 5px 10px $iconblue;
+        text-shadow: 2px 2px 8px $iconblue;
+      }
+      
+    }
+
+    #profilePic {
+      width: auto;
+      height: 20vh;
+      object-fit: cover;
+      background-size: contain;
+      border-radius: 5%;
+      border: 1px solid $navblue;
+      transition: ease-in-out 0.4s;
+      &:hover {
+        box-shadow: 0px 0px 1px 3px $iconblue;
+     }
+    }
+
+.projectsTitle {
+  padding-top: 5vh;
+}
+
+.projectsContainer {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: auto;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  gap: 1.5rem;
+  padding:  30px;
+  margin-bottom: 50px;
+  .projectCard {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border-radius: 8px;
+    padding: 5px;
+    height: 40vh;
+    max-width: 40vw;
+    text-align: center;  
+    background-color: $cardbackground;
+    li {
+      min-width: 80vw;
+    }
+    img, h3, p {
+      background-color: $cardbackground;
+    }
+    img {
+      width: auto;
+      height: 60%;
+      object-fit: cover;
+      background-size: contain;
+      border-radius: 5px;
+      margin: 1vh 0;
+    }
+    h3 {
+      margin-bottom: 2vh;
+      font-size: 30px;
+    }
+  }
+  }
+
+  li.projectCard:hover {
+    box-shadow: 5px 5px 10px 2px black;
+    border: 1px solid $iconblue;
+    transition: ease 0.3s; 
+  }
+
+  .skillsTitle {
+    padding-top: 5vh;
+  }
+
+  .skillsContainer {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    gap: 1.5rem;
+    padding:  30px;
+    margin-bottom: 50px;
+    .skillCard {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      border-radius: 8px;
+      padding: 5px;
+      height: 40vh;
+      max-width: 40vw;
+      text-align: center;  
+      background-color: $cardbackground;
+      li {
+        min-width: 80vw;
+      }
+      img, h3, p {
+        background-color: $cardbackground;
+      }
+      img {
+        width: auto;
+        height: 60%;
+        object-fit: cover;
+        background-size: contain;
+        border-radius: 5px;
+        margin: 1vh 0;
+      }
+      h3 {
+        margin-bottom: 2vh;
+        font-size: 30px;
+      }
+    }
+    }
+
+    li.skillCard:hover {
+      box-shadow: 5px 5px 10px 2px black;
+      border: 1px solid $iconblue;
+      transition: ease 0.3s; 
+    }
+
+
+  .aboutMeTitle {
+    padding-top: 5vh;
+    margin-bottom: 4vh;
+  }
+
+  .aboutMe {
+    height: 100vh;
+    width: 100%;
+    padding: 5px 0px;
+    margin-bottom: 30vh;
+
+    h4, h5, p {
+      margin: 0vh 3vw 0vh 3vw;
+      padding: 2vh 5vw;
+      background-color: $cardbackground;
+      font-size: 1.5rem;
+    }
+    .topSubtitle {
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+    .lastPara {
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+}

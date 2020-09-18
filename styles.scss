@@ -1,0 +1,240 @@
+@import 'variables.scss';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: $primaryfont;   
+  background-color: $mainblue;    
+    h2 {
+      color: $orange;
+      text-align: center;
+      font-size: 35px;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 2px $navblue;
+    }
+}
+
+span {
+  display: none;
+}
+
+section {
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+}
+
+.navBars {
+  li {
+    list-style-type: none;
+}
+.navIcons, .contact{
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  width: 100vw;
+  height: 8vh;
+  opacity: 0.97;
+  background-color: $navblue;
+    i.fas, a, li {
+      background-color: $navblue;
+    }
+  }
+} 
+
+.navIcons i, .contact i{
+  font-size: 35px;
+  color: $iconblue;
+}
+
+.contact {
+  top: 0;
+}
+
+.navIcons {
+  bottom: 0;
+}
+
+
+.greetingMain {
+  padding-top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  line-height: 60px;
+    .greetingBox {
+      padding-bottom: 300px;
+    }
+    .greeting1 {
+      color: ivory;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px $navblue;
+    }
+    .greeting2 {
+      color:$orange;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-shadow: 1px 1px 2px $navblue;
+    }
+    .greeting3 {
+      color: ivory;
+      font-size: 1.6rem;
+      letter-spacing: 3px;
+      text-shadow: 1px 1px 2px $navblue;
+    }
+    .greeting4 a {
+      font-size: 20px;
+      color: $iconblue;      
+      border-radius: 5px;
+      margin-top: 20%;
+      padding: 0px 5px 0px 5px;
+      box-shadow: 0px 0px 5px 5px $iconblue;
+      }
+    }
+
+    
+    #profilePic {
+      width: auto;
+      height: 20vh;
+      object-fit: cover;
+      background-size: contain;
+      border-radius: 50%;
+      border: 1px solid $navblue;
+    }
+
+.projectsTitle {
+  padding-top: 10vh;
+}
+
+.projectsContainer {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  gap: 1rem;
+  padding:  30px;
+  margin-bottom: 50px;
+  .projectCard {
+    display: flex;
+    flex-flow: column;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;  
+    background-color: $cardbackground;
+    li {
+      min-width: 80vw;
+    }
+    img, h3, p {
+      background-color: $cardbackground;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background-size: contain;
+      border-radius: 5px;
+      margin: 2vh 0;
+    }
+    h3 {
+      margin-bottom: 1vh;
+    }
+  }
+  }
+
+  .skillsTitle {
+    padding-top: 10vh;
+  }
+
+  .skillsContainer {
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    gap: 1rem;
+    padding:  30px;
+    margin-bottom: 50px;
+    .skillCard {
+      display: flex;
+      flex-flow: column;
+      border-radius: 8px;
+      padding: 5px;
+      text-align: center;  
+      background-color: $cardbackground;
+      li {
+        min-width: 80vw;
+      }
+      img, h3, p {
+        background-color: $cardbackground;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-size: contain;
+        border-radius: 5px;
+        margin: 2vh 0;
+      }
+      h3 {
+        margin-bottom: 1vh;
+      }
+    }
+    }
+
+
+  .aboutMeTitle {
+    padding-top: 10vh;
+    margin-bottom: 3.1vh;
+  }
+
+  .aboutMe {
+    height: 100vh;
+    width: 100%;
+    padding: 5px 0px;
+    margin-bottom: 15vh;
+
+    h4, h5, p {
+      margin: 0vh 3vw 0vh 3vw;
+      padding: 1.5vh 3vw;
+      background-color: $cardbackground;
+      font-size: 1.25rem;
+    }
+    .topSubtitle {
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+    .lastPara {
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  .projectsContainer, .skillsContainer, {
+    font-size: 0.9rem;
+  }
+  .aboutMe p, .aboutMe h4, .aboutMe h5 {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+}
+
+@media only screen and (max-width: 300px), (max-height: 600px) {
+  .navIcons i, .contact i{
+    font-size: 24px;
+    color: $iconblue;
+  }
+}
