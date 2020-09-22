@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">  
-  <script src+"navGlow.js"></script>
+  <!-- <script src+"navGlow.js"></script> -->
 
   <title>Steve Maguire</title>
   
@@ -19,34 +19,36 @@
 <body>
 
 <main class="scrollContainer">
-  <nav class="navBars" id="navBars">
+  <nav class="navBarLeft" id="navBarLeft">
 
     <ul class="navIcons">
       <li><a href="#home"><i class="fas fa-home"></i></a><span>HOME</span></li>
-      <li><a href="#projectsPage" class="current"><i class="fas fa-project-diagram"></i></a><span>PROJECTS</span></li>
+      <li><a href="#projectsPage" class="current"><i class="fas fa-folder-open"></i></a><span>PROJECTS</span></li>
       <li><a href="#skillsPage"><i class="fas fa-code"></i></a><span>SKILLS</span></li>
       <li><a href="#aboutMe"><i class="fas fa-user-circle"></i></a><span>ABOUT</span></li>
     </ul>       
+  </nav> 
 
+  <nav class="navBarRight" id="navBarRight">  
     <ul class="contact" id="contact">
       <li><a href="mailto:semaguire75@gmail.com"><i class="fas fa-envelope" id="envelope"></i><span id="email-text">EMAIL</span></a></li>
-      <li><a href="https://www.linkedin.com/in/steve-maguire-a5a8926a" target="_blank"><i class="fab fa-linkedin" id="linkedin"></i><span id="linkedin-text">LINKEDIN</span></a></li>
+      <li><a href="https://www.linkedin.com/in/steve-maguire-a5a8926a" target="_blank">
+        <i class="fab fa-linkedin" id="linkedin"></i>
+        <span id="linkedin-text">LINKEDIN</span></a></li>
       <li><a href="https://github.com/Zdeevo" target="_blank"><i class="fab fa-github-square" id="github"></i><span id="github-text">GITHUB</span></a></li>
-    </ul>       
-
+    </ul>    
   </nav>
 
 <!-- Greeting on landing page -->
 
   <section class="greetingMain" class="scrollChild" id="home" class="container">
-
     <div class="greetingBox" >
       <header>
         <div>
           <img src="./assets/profile-pic-greyscale.jpg" alt="My big mug" id="profilePic">
         </div>
         <h1 class="greeting1" id="greeting1">Hi, I'm</h1>
-        <h1 class="greeting2" id="greeting2" data-aos="zoom-in" >Steve Maguire</h1>
+        <h1 class="greeting2" id="greeting2">Steve Maguire</h1>
         <h1 class="greeting3" id="greeting3">Software Developer</h1>
       </header>
 
@@ -54,8 +56,6 @@
         <a href="#" class="greeting4-text">CONTACT ME</a>
       </nav>
     </div> 
-    
-
   </section>
 
 <!-- Projects page -->
@@ -137,7 +137,7 @@
 <div>
   <article class="aboutMe">
     <h4 class="topSubtitle">Professional</h4>
-    <h5>Senior Ecologist at Nicholas Pearson Associates</h5>
+    <h5>Previous role: Senior Ecologist at Nicholas Pearson Associates</h5>
     <p>Relevant skills <br> 
     - Management: projects, budgets, junior staff, marketing, sub-consultants. <br>
     - Client: Project liaison, design team input, planning process support. <br>

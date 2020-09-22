@@ -25,7 +25,7 @@ section {
   padding-bottom: 8vh;
 }
 
-.navBars {
+.navBarRight, .navBarLeft {
   li {
     list-style-type: none;
 }
@@ -39,7 +39,7 @@ section {
   height: 8vh;
   opacity: 0.97;
   background-color: $navblue;
-    i.fas, a, li {
+    i.fas, i.fab, a {
       background-color: $navblue;
     }
   }
@@ -67,7 +67,7 @@ section {
   text-align: center;
   height: 100vh;
   width: 100%;
-  line-height: 60px;
+  line-height: 45px;
     .greetingBox {
       padding-bottom: 300px;
     }
@@ -220,6 +220,27 @@ section {
       border-bottom-right-radius: 5px;
       border-bottom-left-radius: 5px;
     }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $cardbackground;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $iconblue;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $orange;
 }
 
 @media only screen and (max-width: 600px) {

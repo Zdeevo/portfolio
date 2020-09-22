@@ -24,10 +24,10 @@ section {
   padding-bottom: 8vh;
 }
 
-.navBars li {
+.navBarRight li, .navBarLeft li {
   list-style-type: none;
 }
-.navBars .navIcons, .navBars .contact {
+.navBarRight .navIcons, .navBarRight .contact, .navBarLeft .navIcons, .navBarLeft .contact {
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@ section {
   opacity: 0.97;
   background-color: #12161c;
 }
-.navBars .navIcons i.fas, .navBars .navIcons a, .navBars .navIcons li, .navBars .contact i.fas, .navBars .contact a, .navBars .contact li {
+.navBarRight .navIcons i.fas, .navBarRight .navIcons i.fab, .navBarRight .navIcons a, .navBarRight .contact i.fas, .navBarRight .contact i.fab, .navBarRight .contact a, .navBarLeft .navIcons i.fas, .navBarLeft .navIcons i.fab, .navBarLeft .navIcons a, .navBarLeft .contact i.fas, .navBarLeft .contact i.fab, .navBarLeft .contact a {
   background-color: #12161c;
 }
 
@@ -63,7 +63,7 @@ section {
   text-align: center;
   height: 100vh;
   width: 100%;
-  line-height: 60px;
+  line-height: 45px;
 }
 .greetingMain .greetingBox {
   padding-bottom: 300px;
@@ -213,6 +213,27 @@ section {
 .aboutMe .lastPara {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #d1d3d4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00bcd4;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff9800;
 }
 
 @media only screen and (max-width: 600px) {

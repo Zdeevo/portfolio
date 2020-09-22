@@ -17,9 +17,10 @@
 }
 * main {
   margin-left: 80px;
+  margin-right: 80px;
 }
 
-.navBars {
+.navBarLeft {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -34,43 +35,75 @@
   background-color: #12161c;
   margin: 0px;
 }
-.navBars .navIcons {
+.navBarLeft .navIcons {
   display: flex;
   flex-direction: column;
   height: 40vh;
   width: 80px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
-.navBars .navIcons span {
+.navBarLeft .navIcons span {
   display: none;
 }
-.navBars .navIcons ul {
+.navBarLeft .navIcons ul {
   margin-top: 30%;
 }
-.navBars .contact {
-  display: flex;
-  flex-direction: column;
-  height: 30vh;
-  width: 80px;
-  justify-content: flex-end;
-  align-items: center;
-}
-.navBars .contact span {
-  display: none;
-}
-.navBars ul {
+.navBarLeft ul {
   list-style-type: none;
 }
-.navBars i {
+.navBarLeft i {
   font-size: 35px;
   color: #00bcd4;
   text-shadow: 0px 0px 5px 5px #00bcd4;
 }
-.navBars ul.contact, .navBars ul.navIcons, .navBars i.fas, .navBars a, .navBars li {
+.navBarLeft ul.navIcons, .navBarLeft i.fas, .navBarLeft a {
   background-color: #12161c;
 }
-.navBars ul li a:hover {
+.navBarLeft ul li a:hover {
+  text-shadow: 0 0 10px #00bcd4;
+}
+
+.navBarRight {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  padding-top: 25vh;
+  padding-bottom: 20px;
+  background-color: #12161c;
+  margin: 0px;
+}
+.navBarRight .contact {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+.navBarRight .contact span {
+  display: none;
+}
+.navBarRight .contact ul {
+  margin-top: 30%;
+}
+.navBarRight ul {
+  list-style-type: none;
+}
+.navBarRight i {
+  font-size: 35px;
+  color: #00bcd4;
+}
+.navBarRight ul.contact, .navBarRight i.fas, .navBarRight i.fab, .navBarRight a {
+  background-color: #12161c;
+}
+.navBarRight ul li a:hover {
   text-shadow: 0 0 10px #00bcd4;
 }
 
@@ -79,9 +112,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: left;
+  text-align: center;
   height: 100vh;
-  width: 70%;
+  width: 100%;
   line-height: 60px;
 }
 .greetingMain .greetingBox {
@@ -254,7 +287,15 @@ li.skillCard:hover {
   margin: 0vh 3vw 0vh 3vw;
   padding: 2vh 5vw;
   background-color: #d1d3d4;
-  font-size: 1.5rem;
+}
+.aboutMe h4 {
+  font-size: 1.75rem;
+}
+.aboutMe h5 {
+  font-size: 1.35rem;
+}
+.aboutMe p {
+  font-size: 1.25rem;
 }
 .aboutMe .topSubtitle {
   border-top-right-radius: 5px;
@@ -263,4 +304,21 @@ li.skillCard:hover {
 .aboutMe .lastPara {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d1d3d4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00bcd4;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff9800;
 }
