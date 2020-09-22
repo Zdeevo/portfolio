@@ -64,6 +64,9 @@
 
   ul li a:hover {
     text-shadow: 0 0 10px $iconblue; 
+  }
+  i:active {
+    color: $orange;
 }
 }
 
@@ -110,6 +113,9 @@
 
   ul li a:hover {
     text-shadow: 0 0 10px $iconblue; 
+}
+i:active {
+  color: $orange;
 }
 
 }

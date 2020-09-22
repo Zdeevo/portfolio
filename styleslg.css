@@ -63,6 +63,9 @@
 .navBarLeft ul li a:hover {
   text-shadow: 0 0 10px #00bcd4;
 }
+.navBarLeft i:active {
+  color: #ff9800;
+}
 
 .navBarRight {
   display: flex;
@@ -105,6 +108,9 @@
 }
 .navBarRight ul li a:hover {
   text-shadow: 0 0 10px #00bcd4;
+}
+.navBarRight i:active {
+  color: #ff9800;
 }
 
 .greetingMain {
