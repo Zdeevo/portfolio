@@ -220,7 +220,7 @@ section {
       background-color: $cardbackground;
       font-size: 1.25rem;
       color: $navblue;
-      
+
     }
     .topSubtitle {
       border-top-right-radius: 5px;
@@ -232,29 +232,22 @@ section {
     }
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 3vw;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
   background: $cardbackground;
 }
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: $iconblue;
   border-radius: 10px;
 }
-
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: $orange;
 }
 
 @media only screen and (max-width: 600px) {
-  .projectsContainer, .skillsContainer, {
+  .projectsContainer, .skillsContainer {
     font-size: 0.9rem;
   }
   .aboutMe p, .aboutMe h4, .aboutMe h5 {

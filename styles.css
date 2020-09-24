@@ -224,23 +224,19 @@ section {
   border-bottom-left-radius: 5px;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 3vw;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #d1d3d4;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #00bcd4;
   border-radius: 10px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #ff9800;
 }
