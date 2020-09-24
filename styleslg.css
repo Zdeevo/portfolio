@@ -217,6 +217,10 @@
 .projectsContainer .projectCard h3 {
   margin-bottom: 2vh;
   font-size: 30px;
+  color: #12161c;
+}
+.projectsContainer .projectCard p {
+  color: #12161c;
 }
 
 li.projectCard:hover {
@@ -270,6 +274,10 @@ li.projectCard:hover {
 .skillsContainer .skillCard h3 {
   margin-bottom: 2vh;
   font-size: 30px;
+  color: #12161c;
+}
+.skillsContainer .skillCard p {
+  color: #12161c;
 }
 
 li.skillCard:hover {
@@ -293,6 +301,7 @@ li.skillCard:hover {
   margin: 0vh 3vw 0vh 3vw;
   padding: 2vh 5vw;
   background-color: #d1d3d4;
+  color: #12161c;
 }
 .aboutMe h4 {
   font-size: 1.75rem;
